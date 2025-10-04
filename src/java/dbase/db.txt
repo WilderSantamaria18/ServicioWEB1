@@ -1,0 +1,20 @@
+CREATE DATABASE iphone_db;
+USE iphone_db;
+
+CREATE TABLE producto (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    modelo VARCHAR(100) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL,
+    almacenamiento VARCHAR(20) NOT NULL,
+    color VARCHAR(30) NOT NULL,
+    stock INT NOT NULL DEFAULT 0,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Datos de ejemplo
+INSERT INTO producto (modelo, precio, almacenamiento, color, stock) VALUES
+('iPhone 15 Pro', 1199.99, '256GB', 'Titanio Natural', 50),
+('iPhone 15', 799.99, '128GB', 'Negro', 75),
+('iPhone 14', 699.99, '128GB', 'Azul', 30),
+('iPhone SE', 429.99, '64GB', 'Rojo', 100),
+('iPhone 15 Pro Max', 1299.99, '512GB', 'Titanio Azul', 25);

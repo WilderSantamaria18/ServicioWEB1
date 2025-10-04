@@ -23,7 +23,7 @@ public class Conexion {
         }
         
         Connection c=DriverManager.getConnection
-                                  ("jdbc:mysql://localhost:3306/iphone_db?useSSL=false&serverTimezone=UTC","root","123456");
+                                  ("jdbc:mysql://interchange.proxy.rlwy.net:35617/railway?user=root&password=MMzJZPGpBsBbIAGAlnNHvjUZEDgRCegl");
 
         return c;
     }
