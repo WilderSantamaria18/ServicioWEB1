@@ -21,9 +21,9 @@ public class Conexion {
             // Si no funciona, intentar con el driver antiguo
             Class.forName("com.mysql.jdbc.Driver");
         }
-        
-        Connection c=DriverManager.getConnection
-                                  ("jdbc:mysql://interchange.proxy.rlwy.net:35617/railway?user=root&password=MMzJZPGpBsBbIAGAlnNHvjUZEDgRCegl");
+
+        Connection c = DriverManager.getConnection(
+                "jdbc:mysql://interchange.proxy.rlwy.net:35617/railway?user=root&password=MMzJZPGpBsBbIAGAlnNHvjUZEDgRCegl");
 
         return c;
     }
