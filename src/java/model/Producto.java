@@ -1,5 +1,5 @@
 
-package vo;
+package model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
