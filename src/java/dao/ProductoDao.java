@@ -8,13 +8,15 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import vo.Producto;
+import model.ProductoVo;;
 
 /**
  * DAO de acceso a datos para la tabla `producto`.
  *
- * Este módulo implementa operaciones CRUD básicas (Create, Read, Update, Delete)
- * sobre la tabla `producto` usando JDBC. Cada método obtiene una conexión mediante
+ * Este módulo implementa operaciones CRUD básicas (Create, Read, Update,
+ * Delete)
+ * sobre la tabla `producto` usando JDBC. Cada método obtiene una conexión
+ * mediante
  * `Conexion.MySQL()` y usa try-with-resources para asegurar el cierre de
  * Connection/PreparedStatement/ResultSet.
  *
@@ -22,10 +24,13 @@ import vo.Producto;
  * - findById: devuelve un objeto `Producto` o null si no existe o hay error.
  * - findAll: devuelve una lista (posiblemente vacía) de `Producto`.
  * - insert: inserta un producto y devuelve el id generado (o -1 en error).
- * - update: actualiza un producto por id y devuelve true si se modificó alguna fila.
- * - delete: elimina un producto por id y devuelve true si se eliminó alguna fila.
+ * - update: actualiza un producto por id y devuelve true si se modificó alguna
+ * fila.
+ * - delete: elimina un producto por id y devuelve true si se eliminó alguna
+ * fila.
  *
- * Nota sobre errores: las excepciones se capturan e imprimen (stack trace). No se
+ * Nota sobre errores: las excepciones se capturan e imprimen (stack trace). No
+ * se
  * re-lanzan, por lo que el llamador debe validar los valores de retorno para
  * detectar fallos.
  */
