@@ -23,7 +23,7 @@ public class Conexion {
         }
         
         Connection c=DriverManager.getConnection
-                                  ("jdbc:mysql://localhost:3306/bd_example?useSSL=false&serverTimezone=UTC","root","123456");
+                                  ("jdbc:mysql://localhost:3306/iphone_db?useSSL=false&serverTimezone=UTC","root","123456");
 
         return c;
     }
