@@ -23,7 +23,7 @@ public class Conexion {
         }
 
         Connection c = DriverManager.getConnection(
-                "jdbc:mysql://interchange.proxy.rlwy.net:35617/railway?user=root&password=MMzJZPGpBsBbIAGAlnNHvjUZEDgRCegl");
+                "jdbc:mysql://localhost:3306/iphone_db?user=root&password=123456");
 
         return c;
     }
