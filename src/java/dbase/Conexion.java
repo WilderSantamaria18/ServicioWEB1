@@ -15,10 +15,10 @@ import java.sql.SQLException;
 public class Conexion {
     public static Connection MySQL() throws ClassNotFoundException, SQLException {
         try {
-            // Intentar con el driver nuevo primero
+      
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
-            // Si no funciona, intentar con el driver antiguo
+  
             Class.forName("com.mysql.jdbc.Driver");
         }
 
